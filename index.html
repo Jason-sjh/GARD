@@ -306,7 +306,7 @@ Extensive experiments on Phoenix-T and CSL-Daily datasets demonstrate that GARD 
         <h2 class="subtitle has-text-centered" style="margin-top: 1rem;">
 <strong>(Left)</strong> Illustration of the forward and reverse diffusion processes for the <em>n</em>-th gloss.
   <strong>(Right)</strong> In the reverse process, the denoiser predicts the noise at timestep <em>t</em> conditioned on a set of context vectors.
-  The previous gloss word <em>g</em><sub>n-1</sub> and its corresponding motion <em>m</em><sub>n-1</sub><sup>0</sup> provide semantic and kinematic context for generating the current gloss motion.
+  The previous gloss word <em>g</em><sub>n-1</sub> and its corresponding motion <em>m</em><sup>0</sup><sub>n-1</sub> provide semantic and kinematic context for generating the current gloss motion.
   IG-Guidance reduces boundary gaps through gradient-based control, while GM-Harmonizer promotes a more natural motion flow using a trainable copy of the denoiser.
         </h2>
       </div>
