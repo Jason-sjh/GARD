@@ -301,10 +301,13 @@ Extensive experiments on Phoenix-T and CSL-Daily datasets demonstrate that GARD 
   <div class="hero-body">
     <div class="container has-text-centered">
       <div class="item">
-        <img src="static/images/carousel1.jpg" alt="Research result visualization" loading="lazy" style="max-width: 100%; height: auto;">
+        <img src="static/images/framework.png" alt="Research result visualization" loading="lazy" style="max-width: 100%; height: auto;">
         
         <h2 class="subtitle has-text-centered" style="margin-top: 1rem;">
-          여기에 이미지 아래에 들어갈 설명 문장을 쓰면 됩니다.
+<strong>(Left)</strong> Illustration of the forward and reverse diffusion processes for the <em>n</em>-th gloss.
+  <strong>(Right)</strong> In the reverse process, the denoiser predicts the noise at timestep <em>t</em> conditioned on a set of context vectors.
+  The previous gloss word <em>g</em><sub>n-1</sub> and its corresponding motion <em>m</em><sub>n-1</sub><sup>0</sup> provide semantic and kinematic context for generating the current gloss motion.
+  IG-Guidance reduces boundary gaps through gradient-based control, while GM-Harmonizer promotes a more natural motion flow using a trainable copy of the denoiser.
         </h2>
       </div>
     </div>
