@@ -329,62 +329,74 @@ Extensive experiments on Phoenix-T and CSL-Daily datasets demonstrate that GARD 
 </section>
 <!-- End youtube video -->
 
+<!-- Results of GARD  -->
+    
 <section class="hero is-small is-light">
   <div class="hero-body">
     <div class="container is-max-widescreen">
       <div class="container has-text-centered">
         
-        <h2 class="title is-3">Results of GARD</h2>
+        <h2 class="title is-3" style="margin-bottom: 2rem;">Results of GARD</h2>
         
-        <div class="columns is-multiline is-centered" style="margin-top: 2rem;">
+        <div id="results-carousel" class="carousel results-carousel">
           
-          <div class="column is-half">
+          <div class="item" style="padding: 0 10px;">
             <video autoplay controls muted loop playsinline style="width: 100%; border-radius: 8px;">
               <source src="static/videos/git1-1.mp4" type="video/mp4">
-              Your browser does not support the video tag.
             </video>
           </div>
-          <div class="column is-half">
+          
+          <div class="item" style="padding: 0 10px;">
             <video autoplay controls muted loop playsinline style="width: 100%; border-radius: 8px;">
               <source src="static/videos/git1-2.mp4" type="video/mp4">
-              Your browser does not support the video tag.
             </video>
           </div>
 
-          <div class="column is-half">
+          <div class="item" style="padding: 0 10px;">
             <video autoplay controls muted loop playsinline style="width: 100%; border-radius: 8px;">
               <source src="static/videos/git1-3.mp4" type="video/mp4">
-              Your browser does not support the video tag.
-            </video>
-          </div>
-          <div class="column is-half">
-            <video autoplay controls muted loop playsinline style="width: 100%; border-radius: 8px;">
-              <source src="static/videos/git2-1.mp4" type="video/mp4">
-              Your browser does not support the video tag.
             </video>
           </div>
 
-          <div class="column is-half">
+          <div class="item" style="padding: 0 10px;">
             <video autoplay controls muted loop playsinline style="width: 100%; border-radius: 8px;">
-              <source src="static/videos/git2-2.mp4" type="video/mp4">
-              Your browser does not support the video tag.
+              <source src="static/videos/git2-1.mp4" type="video/mp4">
             </video>
           </div>
-          <div class="column is-half">
+
+          <div class="item" style="padding: 0 10px;">
+            <video autoplay controls muted loop playsinline style="width: 100%; border-radius: 8px;">
+              <source src="static/videos/git2-2.mp4" type="video/mp4">
+            </video>
+          </div>
+
+          <div class="item" style="padding: 0 10px;">
             <video autoplay controls muted loop playsinline style="width: 100%; border-radius: 8px;">
               <source src="static/videos/git2-3.mp4" type="video/mp4">
-              Your browser does not support the video tag.
             </video>
           </div>
           
         </div>
-      </div>
+        </div>
     </div>
   </div>
 </section>
 
+<script>
+  // 페이지의 다른 스크립트들이 모두 로드된 후 실행되도록 안전하게 감싸줍니다.
+  window.addEventListener('load', function() {
+    bulmaCarousel.attach('#results-carousel', {
+      slidesToScroll: 1, // 화살표 클릭 시 1칸씩 이동
+      slidesToShow: 2,   // 화면에 동시에 보여줄 영상 개수 (2개로 설정하여 크게 보이게 함)
+      loop: true,        // 끝까지 가면 처음으로 무한 반복
+      infinite: true,
+      autoplay: false,   // 자동으로 넘어가진 않게 설정
+      pagination: true,  // 영상 아래쪽에 현재 위치를 알려주는 점(bullet) 표시
+    });
+  });
+</script>
 
-
+<!--End Results of GARD -->
     
 <!-- Paper poster -->
 
